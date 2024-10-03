@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MLSA</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- == icon == -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="home.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <style>
+      /* body {
+        margin: 0;
+        padding: 0;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(32, 58, 97, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+      } */
+      @font-face {
+        font-family: "MyCustomFont";
+        src: url("path/to/your/font-file.ttf");
+      }
+
+      .mdiv {
+        top: 100px;
+        left: 70px;
+      }
+      .mlsafull {
+        top: 350px;
+        left: 70px;
+      }
+      @media (max-width: 600px) {
+        .mlsafull {
+          top: 335px;
+          left: 70px;
+        }
+      }
+
+      .microsoft-learn {
+        color: white;
+        font-size: 70px;
+        font-family: serif;
+        left: 10px;
+        top: 20px;
+        position: relative;
+      }
+      @media (max-width: 600px) {
+        .microsoft-learn {
+          font-size: 25px;
+          position: absolute;
+          margin-top: -16vh;
+          margin-left: -0.6vh;
+        }
+      }
+      @media (max-width: 414px) {
+        .microsoft-learn {
+          font-size: 25px;
+          position: absolute;
+          margin-top: -18vh;
+          margin-left: -0.6vh;
+        }
+      }
+      .stu-amb {
+        color: white;
+        font-size: 70px;
+        font-family: serif;
+        left: 150px;
+        position: relative;
+        bottom: 15px;
+      }
+      @media (max-width: 600px) {
+        .stu-amb {
+          font-size: 20px;
+          position: absolute;
+          margin-bottom: 1vh;
+          margin-left: -11vh;
+        }
+      }
+      body {
+        --gradient-start-color: #152874;
+        --gradient-mid-color: #152874;
+        --gradient-end-color: #0078d4;
+        background: linear-gradient(
+          to right,
+          var(--gradient-start-color),
+          var(--gradient-mid-color),
+          var(--gradient-end-color)
+        );
+      }
+
+      .M {
+        font-size: 210px;
+        font-family: serif;
+        background: linear-gradient(
+          to right,
+          var(--gradient-end-color),
+          var(--gradient-end-color)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        top: 20px;
+      }
+      @media (max-width: 600px) {
+        .M {
+          position: absolute;
+          /* left: 10px; */
+          font-size: 60px;
+        }
+      }
+      @media (max-width: 414px) {
+        .M {
+          position: absolute;
+          /* left: 10px; */
+          font-size: 60px;
+        }
+      }
+
+      .L {
+        font-size: 210px;
+        font-family: serif;
+        background: linear-gradient(
+          to right,
+          var(--gradient-mid-color),
+          var(--gradient-end-color)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        top: 20px;
+      }
+      @media (max-width: 600px) {
+        .L {
+          position: absolute;
+          margin-left: 6.5vh;
+          font-size: 60px;
+        }
+      }
+      @media (max-width: 415px) {
+        .L {
+          position: absolute;
+          margin-left: 6vh;
+          font-size: 60px;
+        }
+      }
+
+      .S {
+        font-size: 210px;
+        font-family: serif;
+        background: linear-gradient(
+          to right,
+          var(--gradient-mid-color),
+          var(--gradient-end-color)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        top: 20px;
+      }
+      @media (max-width: 600px) {
+        .S {
+          position: absolute;
+          margin-left: 9.5vh;
+          font-size: 60px;
+        }
+      }
+      @media (max-width: 415px) {
+        .S {
+          position: absolute;
+          margin-left: 10vh;
+          font-size: 60px;
+        }
+      }
+
+      .A {
+        font-size: 210px;
+        font-family: serif;
+        background: linear-gradient(
+          to right,
+          var(--gradient-mid-color),
+          var(--gradient-end-color)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        top: 20px;
+      }
+      @media (max-width: 600px) {
+        .A {
+          position: absolute;
+          margin-left: 14vh;
+          font-size: 60px;
+        }
+      }
+      @media (max-width: 415px) {
+        .A {
+          position: absolute;
+          margin-left: 13vh;
+          font-size: 60px;
+        }
+      }
+
+      .typed-cursor {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="banner">
+    <nav>
+      <div>
+        <img
+          src="https://res.cloudinary.com/de27xvxon/image/upload/v1710327804/mlsaLogo2_zcymcz.png"
+          class="logo"
+        />
+      </div>
+      <div class="menu-icons-div" id="menu">
+        <ul class="menu-icons">
+          <li><a href="homepage.html">HOME</a></li>
+          <li><a href="Events.html">EVENTS</a></li>
+          <li><a href="index.html">PROJECTS</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="Gallery.html">GALLERY</a></li>
+          <li><a href="Members.html">MEMBERS</a></li>
+          <li><a href="">YOUTUBE</a></li>
+        </ul>
+      </div>
+      <div>
+        <img
+          src="https://res.cloudinary.com/drcjc86ft/image/upload/v1715606189/icons8-menu-bar-50_okbdi7.png"
+          class="menu-lines"
+          id="menu-icon"
+        />
+      </div>
+    </nav>
+    <img
+      src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+      alt="logo"
+      class="logoo"
+    />
+    <br /><br /><br /><br />
+    <div class="mdiv" style="display: flex; position: absolute; color: white">
+      <p class="M">M</p>
+      <p class="L">L</p>
+      <p class="S">S</p>
+      <p class="A">A</p>
+    </div>
+    <div class="mlsafull" style="position: absolute; color: white">
+      <pre class="microsoft-learn">
+Microsoft Learn
+    Student Ambassador
+      </pre>
+      <!-- <p class="stu-amb">Student Ambassador</p> -->
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="about">About Us</div>
+
+    <br />
+    <br />
+    <div class="vision-content">
+      <img
+        src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/vision_dotsv4.png"
+        alt="vision-img"
+        class="vision-img"
+      />
+      <div class="vision">Vision</div>
+      <div class="vision-text">
+        <br />
+        <p>
+          MLSA envisions a world where everyone has access to the benefits of
+          technology. We believe that technology has the potential to be an
+          effective tool for education.We are committed to educating everyone
+          about various tech stacks, thus keeping them updated.
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <div class="vision-content">
+      <img
+        src="https://res.cloudinary.com/drcjc86ft/image/upload/v1714974356/goal_m1qjsi_bifatq.jpg"
+        alt="vision-img"
+        class="vision-img"
+      />
+      <div class="goal">Goal</div>
+      <div class="vision-text">
+        <br />
+        <p>
+          MLSA envisions a world where everyone has access to the benefits of
+          technology. We believe that technology has the potential to be an
+          effective tool for education.We are committed to educating everyone
+          about various tech stacks, thus keeping them updated.
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="vision-content">
+      <img
+        src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710500996/mission_mk9flk.jpg"
+        alt="vision-img"
+        class="vision-img"
+      />
+      <div class="mission">Mission</div>
+      <div class="vision-text">
+        <br />
+        <p>
+          MLSA envisions a world where everyone has access to the benefits of
+          technology. We believe that technology has the potential to be an
+          effective tool for education.We are committed to educating everyone
+          about various tech stacks, thus keeping them updated.
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="domains">Our Domains</div>
+    <div class="vision-content">
+      <img
+        src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501005/technical_qi37di.png"
+        alt="vision-img"
+        class="vision-img"
+      />
+      <div class="technical">Technical</div>
+      <div class="vision-text">
+        <br />
+        <p>
+          MLSA envisions a world where everyone has access to the benefits of
+          technology. We believe that technology has the potential to be an
+          effective tool for education.We are committed to educating everyone
+          about various tech stacks, thus keeping them updated.
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="vision-content">
+      <img
+        src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710500982/creative_o826bm.png"
+        alt="vision-img"
+        class="vision-img"
+      />
+      <div class="creative">Creative</div>
+      <div class="vision-text">
+        <br />
+        <p>
+          MLSA envisions a world where everyone has access to the benefits of
+          technology. We believe that technology has the potential to be an
+          effective tool for education.We are committed to educating everyone
+          about various tech stacks, thus keeping them updated.
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="vision-content">
+      <img
+        src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710500999/operations_eeiwqi.png"
+        alt="vision-img"
+        class="vision-img"
+      />
+      <div class="operations">Operations</div>
+      <div class="vision-text">
+        <br />
+        <p>
+          MLSA envisions a world where everyone has access to the benefits of
+          technology. We believe that technology has the potential to be an
+          effective tool for education.We are committed to educating everyone
+          about various tech stacks, thus keeping them updated.
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <div class="vision-content">
+      <img
+        src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710500996/marketing_fcmvam.png"
+        alt="vision-img"
+        class="vision-img"
+      />
+      <div class="marketing">Marketing</div>
+      <div class="vision-text">
+        <br />
+        <p>
+          MLSA envisions a world where everyone has access to the benefits of
+          technology. We believe that technology has the potential to be an
+          effective tool for education.We are committed to educating everyone
+          about various tech stacks, thus keeping them updated.
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <div class="vision-content">
+      <img
+        src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/youtube_psndgi.png"
+        alt="vision-img"
+        class="vision-img"
+      />
+      <div class="youtube">Youtube</div>
+      <div class="vision-text">
+        <br />
+        <p>
+          MLSA envisions a world where everyone has access to the benefits of
+          technology. We believe that technology has the potential to be an
+          effective tool for education.We are committed to educating everyone
+          about various tech stacks, thus keeping them updated.
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <div class="vision-content">
+      <img
+        src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710500983/design_qbbsen.png"
+        alt="vision-img"
+        class="vision-img"
+      />
+      <div class="design">Design</div>
+      <div class="vision-text">
+        <br />
+        <p>
+          MLSA envisions a world where everyone has access to the benefits of
+          technology. We believe that technology has the potential to be an
+          effective tool for education.We are committed to educating everyone
+          about various tech stacks, thus keeping them updated.
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <div class="leads">Our Leads</div>
+    <div class="container-leads">
+      <br />
+      <div class="slider-wrapper">
+        <button id="prev-slide" class="slide-button material-symbols-rounded">
+          chevron_left
+        </button>
+        <ul class="image-list">
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-1"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-2"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-3"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-4"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-5"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-6"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-7"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-8"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-9"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-10"
+          />
+        </ul>
+        <!-- <button id="next-slide" class="slide-button material-symbols-rounded">
+          chevron_right
+        </button>
+      </div>
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div> -->
+    </div>
+    <br />
+    <br />
+    <div class="Ex-Leads">Our Ex-Leads</div>
+    <br />
+    <div class="container-exleads">
+      <div class="slider-wrapper" id="ex">
+        <button id="prev-slide" class="slide-button material-symbols-rounded">
+          chevron_left
+        </button>
+        <ul class="image-list">
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-1"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-2"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-3"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-4"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-5"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-6"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-7"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-8"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-9"
+          />
+          <img
+            class="image-item"
+            src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/title_logo_jkk3lh.png"
+            alt="img-10"
+          />
+        </ul>
+        <!-- <button id="next-slide" class="slide-button material-symbols-rounded">
+          chevron_right
+        </button> -->
+      </div>
+      <!-- <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div> -->
+    </div>
+    <div class="sponsors" style="font-size: 60px">Our Sponsors</div>
+    <br />
+    <br />
+    <div class="banner1" style="" ;>
+      <br />
+      <div class="container_sponsers">
+        <a href="https://www.foundit.in/zuno/" class="card_sponsers">
+          <div class="image_sponsers">
+            <img
+              src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501006/zuno_jpcsp7.png"
+            />
+          </div>
+        </a>
+        <a href="https://www.mlsakiit.com/" class="card_sponsers">
+          <div class="image_sponsers">
+            <img
+              src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710500983/bb_mzxvlh.png"
+            />
+          </div>
+        </a>
+        <a href="https://www.baithack.in/" class="card_sponsers">
+          <div class="image_sponsers">
+            <img
+              src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710500983/baithack_lkzx4a.png"
+            />
+          </div>
+        </a>
+      </div>
+
+      <div class="container_sponsers">
+        <a href="https://www.prepbytes.com/" class="card_sponsers">
+          <div class="image_sponsers">
+            <img
+              src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501001/prepbytes_sx0rv1.png"
+            />
+          </div>
+        </a>
+        <a href="https://www.snapchat.com/en-GB" class="card_sponsers">
+          <div class="image_sponsers">
+            <img
+              src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501002/snapchat_mrb5vl.png"
+            />
+          </div>
+        </a>
+        <a href="https://www.jetbrains.com/" class="card_sponsers">
+          <div class="image_sponsers">
+            <img
+              src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710500994/jetBrains_lzk2pc.png"
+            />
+          </div>
+        </a>
+      </div>
+
+      <div class="container_sponsers">
+        <a href="https://www.codingninjas.com/" class="card_sponsers">
+          <div class="image_sponsers">
+            <img
+              src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710500984/codingNinja_a6rjgi.png"
+            />
+          </div>
+        </a>
+        <a href="https://sawolabs.com/" class="card_sponsers">
+          <div class="image_sponsers">
+            <img
+              src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710501002/sawolabs_xlrwzv.png"
+            />
+          </div>
+        </a>
+        <a href="https://devfolio.co/" class="card_sponsers">
+          <div class="image_sponsers">
+            <img
+              src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710500984/devfolio_eazert.png"
+            />
+          </div>
+        </a>
+      </div>
+
+      <div class="container_sponsers">
+        <a href="https://www.geeksforgeeks.org/" class="card_sponsers">
+          <div class="image_sponsers">
+            <img
+              src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710500990/gfk_etfvsc.png"
+            />
+          </div>
+        </a>
+        <a href="https://www.mlsakiit.com/" class="card_sponsers">
+          <div class="image_sponsers">
+            <img
+              src="https://res.cloudinary.com/drcjc86ft/image/upload/v1710500982/adda_rf0i9c.png"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <div style="position: relative; top: 700px">
+      <footer class="footer">
+        <div class="container">
+          <div class="col1">
+            <a href="homepage.html" class="brand">MLSA AVV AMARAVATI</a>
+            <ul class="media-icons">
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col2">
+            <ul class="menu">
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="Events.html">Events</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+              <li><a href="Members.html">Members</a></li>
+              <p>
+                Join our global community of students who are passionate about
+                building AI-driven solutions with Microsoft technology.
+                Accelerate innovation and grow the skills you need to have
+                greater impact in the projects and communities that matter to
+                you.
+              </p>
+            </ul>
+          </div>
+          <div class="col3">
+            <p>Students Community</p>
+            <form>
+              <div class="input-wrap">
+                <input type="email" placeholder="mlsa@gmail.com" /><button
+                  type="submit"
+                >
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+            <!-- <ul class="services-icons">
+              <li>
+                <a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-google-pay"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="mekk">
+            <p>@MLSA AVV AMARAVATI 2024 - All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
